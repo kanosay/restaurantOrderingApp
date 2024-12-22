@@ -22,6 +22,44 @@
             </div>
         </div>
     </header>
+    <main class="main">
+        <div class="container">
+            <ul id="mainMenu" class="main__menu">
+            </ul>
+        </div>
+    </main>
+    <section class="pop__up">
+        <form id="form" action="">
+            <h2>Enter card details</h2>
+            <div class="wrap">
+                <input type="text" class="text" name="name" id="name" placeholder="Enter your name" required>
+                <input id="ccn" type="number" name="ccn" class="text" maxlength="19" 
+                placeholder="Enter card number" required>
+                <input id="cvv" type="number" name="cvv" class="text" maxlength="3" 
+                placeholder="Enter CVV" required>
+                <button class="subBtn" type="submit">Pay</button>
+            </div>
+        </form>
+    </section>
+    <section class="ready">
+        <div class="container">
+            <h2>Thanks, <span id="order__name"></span>! Your order is on its way!</h2>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div id="footer" class="footer__inner">
+                <h2 class="footer__title">Your order</h2>
+                <ul id="footer__orders" class="footer__orders">
+                </ul>
+                <div class="total__price">
+                    <h2>Total price:</h2>
+                    <p id="price">$0</p>
+                </div>
+                <button id="complete" class="complete__order">Complete order</button>
+            </div>
+        </div>
+    </footer>
 
     <script type="module" src="main.js"></script>
 </body>

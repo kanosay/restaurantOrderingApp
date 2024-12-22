@@ -2,6 +2,10 @@
 
 $font-family: "Smythe", serif;
 $white: #fff;
+$black: #000;
+$gray: #8B8B8B;
+$green: #16DB99;
+$darkGreen: #065F46;
 
 body {
     font-family: $font-family;
@@ -30,4 +34,154 @@ body {
             letter-spacing: 3px;
         }
     }
+}
+
+.main__menu {
+    padding: 0px 45px 0px 45px;
+    .menu__inner {
+        display: flex;
+        padding-top: 55px;
+        align-items: flex-start;
+        border-bottom: 1px solid $gray;
+        padding-bottom: 40px;
+        .menu__img {
+            display: block;
+        }
+        .menu__title {
+            margin-left: 10px;
+            line-height: 28px;
+            color: $black;
+            font-weight: 500;
+            h2 {
+                font-size: 28px;
+            }
+            p {
+                font-size: 16px;
+                color: $gray;
+            }
+            h3 {
+                font-size: 20px;
+            }
+        }
+        .menu__add {
+            display: block;
+            margin-left: auto;
+            font-size: 50px;
+            text-align: center;
+            padding: 0px 23px;
+            background-color: transparent;
+            border: 1px solid $gray;
+            border-radius: 100%;
+            p {
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
+
+.footer__inner {
+    display: none;
+    padding: 50px 45px 30px 45px;
+    color: $black;
+    .footer__title {
+        font-size: 28px;
+        text-align: center;
+    }
+    .footer__orders {
+        border-bottom: 2px solid $black;
+        padding-bottom: 10px;
+        .order {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+            h2 {
+                font-size: 28px;
+                a {
+                    font-size: 12px;
+                    padding-left: 10px;
+                    color: $gray;
+                    cursor: pointer;
+                }
+            }
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+    .total__price {
+        display: flex;
+        justify-content: space-between;
+        font-size: 28px;
+        padding: 10px 0;
+        p {
+            font-size: 20px;
+        }
+    }
+    .complete__order {
+        width: 100%;
+        color: $white;
+        padding: 20px 0;
+        border-radius: 10px;
+        background-color: $green;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+.pop__up {
+    display: none;
+    max-width: 424px;
+    height: 442px;
+    position: fixed;
+    background: $white;
+    box-shadow: 0px 0px 60px -20px $black;
+    border-radius: 10px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    form {
+        padding-top: 50px;
+        color: $black;
+        text-align: center;
+        font-size: 24px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        .wrap {
+            padding-top: 20px;
+            max-width: 375px;
+            margin: 0 auto;
+            .text {
+                margin-top: 10px;
+                border: 1px solid $black;
+                width: 100%;
+                font-size: 20px;
+                padding: 20px 20px;
+                border-radius: 5px;
+            }
+            .subBtn {
+                width: 100%;
+                color: $white;
+                padding: 20px 0;
+                border-radius: 5px;
+                background-color: $green;
+                font-size: 16px;
+                font-weight: 600;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.ready {
+    display: none;
+    color: $darkGreen;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    font-size: 32px;
 }
